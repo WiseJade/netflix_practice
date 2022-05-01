@@ -1,0 +1,256 @@
+/*페이지 전체 설정*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+#acenter {
+    text-align: center;
+}
+
+/* Main 설정 */
+#main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 43em;
+    max-height: 43em;
+    position: relative;
+}
+#main::before {
+    content: "";
+    background: url("images/background-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#story-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#header {
+    position: relative;
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 15em;
+    align-items: flex-start;
+    width: 100%
+}
+
+#logo {
+    flex-grow: 1;
+    min-height: 0.5em;
+    max-height: 3em;
+}
+
+#header-buttons {
+    flex-grow: 1;
+    min-width: 10%;
+    max-width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#lang-ko {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5%;
+    color: white;
+    min-height: 2.5em;
+    min-width: 6.5em;
+    font-size: 0.8em;
+    margin: 0 3em;
+    cursor: pointer;
+}
+#login {
+    background-color: red;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    min-height: 2.3em;
+    min-width: 4.5em;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+/* story card 설정 */
+.story {
+    background-color: black;
+    margin-top: 10px;
+    padding: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.story-card {
+    max-width: 35em;
+}
+
+.story-card-text {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    height: fit-content;
+}
+
+/* text */
+.story-card-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.story-card-midtext {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.story-card-smalltext {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Images */
+#tv {
+    max-height: 20em;
+}
+#device {
+    max-height: 25em;
+}
+#kids {
+    max-height: 25em;
+}
+
+/* Phone image box */
+#phone-box {
+    position: relative;
+}
+#phone {
+    position: relative;
+    width: 70%;
+}
+#down-box {
+    position: absolute;
+    border: 2px solid rgb(96, 96, 96);
+    background-color: black;
+    border-radius: 10px;
+    width: 20em;
+    height: auto;
+    top: 65%;
+    left: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 12px;
+}
+#boxshot {
+    height: 5.5em;
+    width: auto;
+    margin-right: 1em;
+}
+#down-box-context {
+    margin-right: 6em;
+}
+#weired {
+    font-size: 1rem;
+    color: white;
+}
+#saving {
+    font-size: 0.8rem;
+    color: rgb(0, 100, 226);
+
+}
+#icon-down {
+    height: 1.3em;
+}
+
+/* 이메일 주소 입력 박스 */
+.email-address-content {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 20px;
+}
+.email-address-box {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    min-height: 3em;
+    min-width: 90%;
+}
+.email-address {
+    margin: 0;
+    min-width: 30em;
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 2%;
+}
+.start {
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    width: 8em;
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* QnA */
+#story-QnA {
+    padding: 70px 0px;
+    text-align: center;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#QnA-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.QnA{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(42, 42, 42);
+    margin: 5px;
+    width: 60em;
+    height: 10m;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 3%;
+}
+.QnA-text {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.plus {
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
